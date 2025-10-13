@@ -1,0 +1,45 @@
+---
+title: "AI Coding Assistant Ecosystem Diagrams"
+format:
+  html:
+    embed-resources: true
+---
+
+# AI Coding Assistant Ecosystem Diagrams
+
+## High-Level Relationships (UML)
+
+```{mermaid}
+classDiagram
+    class IDE {
+       
+    }
+    class AIAssistant {
+      
+    }
+    class CLITool {
+       
+    }
+    class AIModel {
+   
+    }
+    class InteractionMode {
+    
+    }
+
+    IDE --> AIAssistant : API services
+    CLITool --> AIAssistant : API services
+    CLITool --> AIModel : prompt orchestration 
+    AIAssistant --> AIModel : prompt orchestration
+    AIAssistant --> InteractionMode : expose capabilities
+    InteractionMode --> IDE : in-IDE UX
+    InteractionMode --> CLITool : text-based UX
+```
+
+The original, all-in-one diagram has been split into three focused Mermaid views for clarity:
+
+- [`ai_ide.md`](./ai_ide.md) — IDE-centric integrations with AI coding assistants and their underlying models (no editors or CLI tooling).
+- [`ai_editors.md`](./ai_editors.md) — Notebook and lightweight editor experiences powered by AI assistants.
+- [`ai_cli.md`](./ai_cli.md) — Command-line tooling that surfaces AI assistance directly in the terminal, plus the supporting services and models.
+
+Open any of the files above in VS Code (Markdown preview) or the [Mermaid Live Editor](https://mermaid.live/) to render the diagrams individually. This layout keeps each context scoped and accessible while still covering the full ecosystem across the three documents.

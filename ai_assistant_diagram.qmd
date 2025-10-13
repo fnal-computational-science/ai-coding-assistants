@@ -12,28 +12,25 @@ format:
 ```{mermaid}
 classDiagram
     class IDE {
-       
     }
-    class AIAssistant {
-      
-    }
-    class CLITool {
-       
-    }
-    class AIModel {
-   
-    }
-    class InteractionMode {
+    note for IDE "Integrated Development Environments<br/>like VS Code, PyCharm,<br/>Emacs + plugins, and Vim + plugins"
     
+    class Provider {
     }
+    note for Provider "Github Copilot and Ollama"
+    class CLITool {
+    }
+    note for CLITool "Command Line Interfaces<br/>like Gemini and Claude CMD"   
 
-    IDE --> AIAssistant : API services
-    CLITool --> AIAssistant : API services
-    CLITool --> AIModel : prompt orchestration 
-    AIAssistant --> AIModel : prompt orchestration
-    AIAssistant --> InteractionMode : expose capabilities
-    InteractionMode --> IDE : in-IDE UX
-    InteractionMode --> CLITool : text-based UX
+    class LanguageModel {      
+    }
+    note for LanguageModel "Claude Sonnet 4.5 and GPT-4.1"
+    
+
+    IDE --> Provider : API services
+    CLITool --> Provider : API services
+    CLITool --> LanguageModel : prompt orchestration 
+    Provider --> LanguageModel : prompt orchestration
 ```
 
 The original, all-in-one diagram has been split into three focused Mermaid views for clarity:

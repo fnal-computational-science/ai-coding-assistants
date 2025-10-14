@@ -9,7 +9,7 @@ format:
 
 ## High-Level Relationships (UML)
 
-```{mermaid}
+```mermaid
 classDiagram
     class IDE {
     }

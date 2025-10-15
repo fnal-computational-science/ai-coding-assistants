@@ -6,12 +6,31 @@ execute:
   warning: false
 ---
 
-We assume you already have [Visual Studio Code](https://code.visualstudio.com/download) installed.
+## Installation
+
+These instructions are written for someone working on a laptop or desktop on which you have permission to install code.
+From this machine, you may log into a remote machine to do code development, or you may build and run code locally on the machine.
+
+If you do not already have [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) installed, install it.
+During the installation it will ask you to set up Copilot and prompt you to log in to your GitHub account.
+You must already have a GitHub account established.
+Through you GitHub account, you can enable GitHub Copilot features; go to https://github.com/settings/copilot/features, which will direct you to your own account's settings.
 
 ![The Extensions icon in Visual Studio Code](images/extensions.png)/{#fig-extensions}
 
-1. Install the GitHub Copilot.
-   In VS Code, in the left-hand sidebar, choose "Extensions" (the icon for "Extensions" is shown in @fig-extensions).
+If you do not already have it, install the GitHub Copilot extension. [^orig]
+In VS Code, in the left-hand sidebar, choose "Extensions" (the icon for "Extensions" is shown in @fig-extensions; the Copilot extension is circled in red. Your sidebar may show additional extensions you have already installed some).
 
-2. Do something else.
-   Some text will go here.
+[^orig]: VS Code may have prompted you to set up Copilot when you first started it.
+         If you have done that, you already have the extension and it is properly configured.
+
+When you are editing code, you may choose to work *locally* or *remotely*.
+Working locally means the code you are editing, and for compiled languages the builds you are creating reside on your laptop or deskotp.
+Working remotely means the code you are editing and for compiled language the builds you are creating reside on a remote (typically Linux) machine.
+
+## Setting up to work locally
+
+## Setting up to work remotely
+
+## Working with the GitHub Copilot
+

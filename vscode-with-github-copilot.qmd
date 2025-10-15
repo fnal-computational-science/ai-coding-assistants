@@ -32,13 +32,30 @@ Working remotely means the code you are editing and for compiled language the bu
 
 To work locally, you must have a repository (or repositories) for the code you are developing on your laptop.
 
-If you are working with one repository, in a terminal window, go to the directory for that repository.
+The first step is to establish your *workspace directory*.
+If you are working with one repository, that directory is your workspace directory.
 If you are working on several repositories at the same time, we recommend having all those repositories cloned in the same directory.
-In the terminal window, go to that directory.
-In both cases, you can start VS Code by executing the command `code .` (note the dot) in that directory.
+In this case, the directory into which the several repositories are cloned is your workspace directory.
+
+There are two good ways to start VS Code with the appropriate active workspace.
+One is to open a terminal window and to go to your workspace directory.
+You can start VS Code by executing the command `code .` (note the dot) in that directory.
 This establishes the directory as your current VS Code workspace.
+
+Another choice is to open the VS Code application, and then to click `File | Open Folder`.
+This brings up a file browser dialog box.
+Navigate to your workspace directory and press the `Open` button.
+
+You should then see the `Explorer` window of VS Code showing the directory structure under your workspace directory.
 
 ## Setting up to work remotely
 
-## Working with the GitHub Copilot
+To work remotely additional VS Code extensions are required.
+We recommend following the instructions at https://code.visualstudio.com/docs/remote/ssh to install and configure the extensions.
+
+:::{.callout-note}
+Add instructions here for getting started with a remote connection.
+:::
+
+## Using GitHub Copilot to configure your VS Code workspace
 

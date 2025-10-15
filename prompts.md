@@ -1,0 +1,14 @@
+# Some Useful Prompts for GitHub Copilot
+
+
+## Using GitHub Copilot to help configure VS Code
+
+To enable Intellisense in the code editor.
+
+    Create a .vscode directory with all appropriate configuration files to allow Intellisense to do code navigation and code completion.
+
+Write tasks.json to allow building and running of the code. The commands
+I use in my terminal window are - copy/paste the commands.
+
+This involves first running the commands to build the code in the
+terminal.
